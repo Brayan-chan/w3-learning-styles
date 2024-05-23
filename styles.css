@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+body {
+    margin-inline: 80px;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, rgb(52, 31, 105), rgb(20, 45, 50), #000000);
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: radial-gradient(circle, rgb(119, 69, 244), rgb(57, 169, 192), #232323);
+    -webkit-background-clip: text;
+    position: relative;
+}
+
+header h3 {
+    margin: 0;
+    background: radial-gradient(circle, rgb(119, 69, 244), rgb(57, 169, 192), #232323);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.accent {
+    background: radial-gradient(circle, rgb(119, 69, 244), rgb(57, 169, 192), #232323);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul .social {
+    position: absolute;
+    right: 0;
+}
+
+nav ul .social-github {
+    position: absolute;
+    right: 0;
+    margin-right: 100px;
+}
+
+nav ul .social-twitter {
+    position: absolute;
+    right: 0;
+    margin-right: 200px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #333333;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 20px;
+    margin-inline: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.description-page {
+    padding: 40px;
+    text-align: left;
+    width: 700px;
+    margin: auto;
+    font-display: auto;
+    font-size: 1.2em;
+}
+
+.products h2 {
+    background: radial-gradient(circle, rgb(103, 46, 247), rgb(57, 169, 192), #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-solid.fa-arrow-down-long {
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    background: radial-gradient(circle, rgb(103, 46, 247), rgb(57, 169, 192), #000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title {
+    text-align: center;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    width: 10px;
+}
+
+.custom-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    padding: 0.01em 0.4em; 
+    background: transparent;
+    border: mediumspringgreen solid 0.15em;
+    border-radius: 0.25em;
+    color: mediumspringgreen;
+    font-size: 0.69em;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms, background 500ms;
+    user-select: none;
+    width: auto;
+    height: auto;
+  }
+  
+  .custom-button p {
+    z-index: 1;
+  }
+  
+  .custom-button:hover {
+    color: #000000;
+    background: linear-gradient(to right, rgb(103, 46, 247), rgb(57, 169, 192), #000);
+  }
+  
+  .custom-button:active {
+    border-color: teal;
+  }
+  
+  .custom-button::after, .custom-button::before {
+    content: "";
+    position: absolute;
+    width: 4em; /* Reducido el tamaño de los pseudo-elementos */
+    aspect-ratio: 1;
+    background: linear-gradient(to right, rgb(103, 46, 247), rgb(57, 169, 192), #000);
+    opacity: 50%;
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+  
+  .custom-button::before {
+    left: 0;
+    transform: translateX(-4em); /* Ajustado el desplazamiento para el nuevo tamaño */
+  }
+  
+  .custom-button::after {
+    right: 0;
+    transform: translateX(4em); /* Ajustado el desplazamiento para el nuevo tamaño */
+  }
+  
+  .custom-button:hover::before {
+    transform: translateX(-0.5em); /* Ajustado el desplazamiento para el nuevo tamaño */
+  }
+  
+  .custom-button:hover::after {
+    transform: translateX(0.5em); /* Ajustado el desplazamiento para el nuevo tamaño */
+  }
+  
+  .custom-button:active::before,
+  .custom-button:active::after {
+    background: teal;
+  }
+  
