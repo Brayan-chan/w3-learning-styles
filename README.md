@@ -11,8 +11,8 @@ npm create astro@latest -- --template basics
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
 
-<img src='./public/images/porta.png'>
-<img src='./public/images/principal.png'>
+<img src='porta.png'>
+
 
 
 ```
